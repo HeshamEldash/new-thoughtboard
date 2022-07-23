@@ -1,0 +1,2 @@
+set SECRET_KEY = secret
+set DATABASE_URL = postgres://docewnkstnvgwu:e0f356e7cbcef3fb200fac04c884c90ea4936c3da366fa561141887707a2ac1b@ec2-54-155-110-181.eu-west-1.compute.amazonaws.com:5432/d44ulgj0jg433v

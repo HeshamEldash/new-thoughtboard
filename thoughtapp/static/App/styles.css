@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    width: 100%;
+    height:100% ;
+    background-color: coral;
+      position: absolute;
+
+}
+
+body a, body a:hover,body  a:focus, body a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+}
+
+.formContainer{
+    margin:auto;
+    padding: 50px;
+    width: 25%
+
+}
+
+.form-control{
+
+    margin: 20px 0;
+
+}
+
+.formContainer button{
+    margin: 2rem auto;
+}
+
+.create-note-container{
+    width: 50%;
+    margin:auto;
+    padding: 50px;
+    background-color: #FCF8E8;
+    border-radius : 10px;
+
+         box-shadow: 2px 9px 13px -2px rgba(0,0,0,0.48);
+            margin-top: 30px;
+                    display: flex ;
+        flex-direction: column;
+
+}
+    .create-note-form{
+
+        display: flex ;
+        flex-direction: column;
+}
+.form-item{
+        border-radius : 5px;
+        height: 2rem;
+        border:0;
+        display: block;
+        width: 100%;
+        margin: 10px;
+
+}
+
+.form-item::placeholder {
+  color: #d9d9d9;
+
+}
+
+.form-large-item{
+    height: 10rem;
+}
+
+.form-button{
+     box-shadow: 2px 9px 13px -2px rgba(0,0,0,0.48);
+}
+
+.form-button:hover {
+  background: rgba(155, 155, 155, 1)
+}
+
+.main-view-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.custom-card{
+    position: relative;
+    overflow-wrap: break-word;
+    height:inherit;
+    height: auto;
+    margin: 10px;
+    width: 15%;
+    background-color: #ffeaa7;
+    border-radius: 7px;
+    padding: 15px;
+    display: inline;
+    box-shadow: 2px 4px 9px -2px rgba(0,0,0,0.48);
+}
+.custom-card:hover{
+        box-shadow: 2px 8px 15px -2px rgba(0,0,0,0.48);
+}
+
+.note-item{
+    padding:7px
+}
+.card-button{
+    cursor: pointer;
+    position:absolute;
+    bottom:5px;
+    right: 20px;
+
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+
+}
+.card-button:hover{
+	color: #718093;
+}

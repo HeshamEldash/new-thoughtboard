@@ -1,0 +1,23 @@
+{% extends "./base.html" %}
+
+{% block content%}
+<div class="main-view-container">
+{% for note in list_of_notes%}
+
+
+<a href="{% url 'thoughtapp:edit_note' note.id   %}">
+<div class="custom-card" >
+  <div class="">
+    <h5 class="card-title note-item">{{note.title}}</h5>
+      <h6 class="card-title note-item">{{note.category}}</h6>
+    <p class="card-text note-item">{{note.content}}</p>
+
+  </div>
+  <a class="card-button" href="{% url 'thoughtapp:delete_note' note.id %}"><i class="fa-solid fa-trash-can"></i></a>
+</div>
+</a>
+
+{%endfor%}
+</div>
+
+{% endblock%}
