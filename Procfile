@@ -2,4 +2,4 @@ release: python manage.py makemigrations--no-input
 
 release: python manage.py migrate --no-input
 
-web: gunicorn ToDo.wsgi
+web: gunicorn --PYTHONPATH ToDo.wsgi --log-file -
