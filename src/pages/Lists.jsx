@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import AuthContext from "../ContextManagers/AuthContext";
 import IList from "../IList/IList";
+import Cookies from 'js-cookie';
 
 // const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
 const APIENDPOINT = "http://127.0.0.1:8000/api"
@@ -43,6 +44,7 @@ export default function Lists(props) {
         headers: {
           "Content-type": "application/json",
           Authorization: "Bearer " + String(authTokens.access),
+          
         },
       }
     );
@@ -60,6 +62,7 @@ export default function Lists(props) {
         headers: {
           "Content-type": "application/json",
           Authorization: "Bearer " + String(authTokens.access),
+          'X-CSRFToken':Cookies.get("csrftoken"),
         },
       })
       // .then((response) => {

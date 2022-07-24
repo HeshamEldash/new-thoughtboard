@@ -26,7 +26,7 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('thoughtapp/', include('thoughtapp.urls')),
     path('admin/', admin.site.urls),
-    # re_path('.*', TemplateView.as_view(template_name = "index.html"))
+    re_path('.*', TemplateView.as_view(template_name = "index.html"))
     # re_path('.*', render_react)
 
 ]

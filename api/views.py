@@ -42,7 +42,7 @@ def register(request):
 
 
 @api_view(["GET", "POST"])
-# @permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated])
 def get_api_lists(request, user_id):
 
     if request.method == "GET":
@@ -59,7 +59,7 @@ def get_api_lists(request, user_id):
         return Response(list_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(["GET", "PUT", "DELETE"])
-# @permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated])
 def get_api_list(request, pk):
     try:
         list = ApiList.objects.get(pk=pk)
@@ -104,9 +104,6 @@ def get_api_notes(request, user_id):
             note_serializer.save()
             return Response(note_serializer.data, status=status.HTTP_201_CREATED)
         return Response(note_serializer.errors,status=status.HTTP_400_BAD_REQUEST)
-
-
-
 
 
 
