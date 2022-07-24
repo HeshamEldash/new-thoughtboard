@@ -4,7 +4,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import Backdrop from "@mui/material/Backdrop";
 
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 export default function Note(props) {
   let {authTokens} = useContext(AuthContext);

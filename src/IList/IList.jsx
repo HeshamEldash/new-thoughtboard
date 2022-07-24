@@ -6,7 +6,9 @@ import Checkbox from "@mui/material/Checkbox";
 import Backdrop from "@mui/material/Backdrop";
 import ClearIcon from "@mui/icons-material/Clear";
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 
 export default function IList(props) {

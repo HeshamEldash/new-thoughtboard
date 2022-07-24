@@ -3,7 +3,9 @@ import IListItem from "./IListItem";
 import AuthContext from "../ContextManagers/AuthContext";
 import Checkbox from "@mui/material/Checkbox";
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 
 export default function CreateListArea(props) {

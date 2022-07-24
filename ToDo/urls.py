@@ -16,11 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include, re_path
 from django.views.generic import TemplateView
+from django.shortcuts import render
+
+# def render_react(request):
+    # return render (request, "index.html")
 
 
 urlpatterns = [
     path('api/', include('api.urls')),
     path('thoughtapp/', include('thoughtapp.urls')),
     path('admin/', admin.site.urls),
-    re_path('.*', TemplateView.as_view(template_name = "index.html"))
+    # re_path('.*', TemplateView.as_view(template_name = "index.html"))
+    # re_path('.*', render_react)
+
 ]

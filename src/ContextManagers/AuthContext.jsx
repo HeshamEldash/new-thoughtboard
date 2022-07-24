@@ -21,7 +21,9 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
   const [error, setError] = useState(false);
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 
   let loginUser = async (e) => {

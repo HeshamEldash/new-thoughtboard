@@ -6,7 +6,9 @@ import CreateListArea from "../IList/CreateListArea";
 
 
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 
 //  the create thought component takes the user input and sends a post request to the server to create either a note or a list

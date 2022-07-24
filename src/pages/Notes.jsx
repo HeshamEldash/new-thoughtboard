@@ -3,7 +3,9 @@ import { createContext, useState, useEffect, useContext } from "react";
 import Note from "../components/Note";
 import AuthContext from "../ContextManagers/AuthContext";
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 
 function Notes(props) {

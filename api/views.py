@@ -39,12 +39,7 @@ def register(request):
     return Response({"reg":"reg"})
 
 
-@api_view(["GET"])
-def home(requst):
-    routes = [
-        {"test": "testing"}
-    ]
-    return Response(routes)
+
 
 @api_view(["GET", "POST"])
 # @permission_classes([IsAuthenticated])

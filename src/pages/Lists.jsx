@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import AuthContext from "../ContextManagers/AuthContext";
-import List from "../components/List";
 import IList from "../IList/IList";
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 
 export default function Lists(props) {

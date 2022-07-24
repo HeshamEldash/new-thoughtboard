@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Notes from "./Notes";
 import CreateThought from "../components/CreateThought";
-import List from "../components/List";
 import Lists from "./Lists"
 
 

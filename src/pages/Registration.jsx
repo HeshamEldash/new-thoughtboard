@@ -2,7 +2,9 @@ import React, { useState, useContext } from "react";
 import AuthContext from "../ContextManagers/AuthContext";
 import { Link } from "react-router-dom";
 
-const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+// const APIENDPOINT = "https://thought-board-app.herokuapp.com/api"
+const APIENDPOINT = "http://127.0.0.1:8000/api"
+
 
 
 function RegisterationPage() {
